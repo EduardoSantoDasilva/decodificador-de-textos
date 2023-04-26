@@ -54,9 +54,9 @@ criptografar.addEventListener('click', ()=>{
 });
 
 copiar.addEventListener('click', () => {
-    
+    let mostrarTexto = document.querySelector(".mostrarTexto");
     navigator.clipboard.writeText(mostrarTexto.textContent);
-    console.log(mostrarTexto.textContent)
     alert('Texto copiado com sucesso!');
+
 });
 
